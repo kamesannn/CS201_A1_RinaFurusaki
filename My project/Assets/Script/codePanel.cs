@@ -32,8 +32,6 @@ public class codePanel : MonoBehaviour
 
 	public void unlock()
     {
-		Debug.Log("yey");
 		BoxOpenImage.SetActive(true);
-		//this.transform.localPosition = new Vector2(-2123, 1525);
 	}
 }
