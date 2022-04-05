@@ -12,7 +12,7 @@ public class items : MonoBehaviour
         Matchbox,
         Fish,
         Needle,
-        Key2,
+        Water,
         Key3,
     }
 

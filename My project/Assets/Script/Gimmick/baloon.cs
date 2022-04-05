@@ -10,6 +10,7 @@ public class baloon : MonoBehaviour
 
         if (hasItem == true)
         {
+            AudioManager.instance.Play("Ballon");
             gameObject.SetActive(false);
             Inventory.instance.UseItem(items.Type.Needle);
         }

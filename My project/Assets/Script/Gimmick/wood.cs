@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class wood : MonoBehaviour
 {
-    public void OnThis()
+    
+    public void OnThisWood()
     {
         bool hasItem = Inventory.instance.CanUseItem(items.Type.Wood);
 
@@ -12,6 +13,19 @@ public class wood : MonoBehaviour
         {
             gameObject.SetActive(false);
             Inventory.instance.UseItem(items.Type.Wood);
+        }
+
+    }
+
+    public void OnThisFire()
+    {
+        bool hasItem = Inventory.instance.CanUseItem(items.Type.Matchbox);
+
+        if (hasItem == true)
+        {
+            AudioManager.instance.Play("Match");
+            gameObject.SetActive(false);
+            Inventory.instance.UseItem(items.Type.Matchbox);
         }
 
     }

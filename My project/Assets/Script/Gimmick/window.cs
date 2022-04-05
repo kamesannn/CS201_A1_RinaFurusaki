@@ -11,6 +11,7 @@ public class window : MonoBehaviour
 
     public void ChangeWindowToOpen()
     {
+        AudioManager.instance.Play("Window");
         closedWindow.sprite = opendedWindow;
     }
 }

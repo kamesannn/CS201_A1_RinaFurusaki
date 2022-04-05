@@ -10,6 +10,7 @@ public class dirt : MonoBehaviour
 
         if (hasItem == true)
         {
+            AudioManager.instance.Play("Wipe");
             gameObject.SetActive(false);
             Inventory.instance.UseItem(items.Type.Cloth);
         }

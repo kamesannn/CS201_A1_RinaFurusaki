@@ -57,7 +57,7 @@ public class Inventory : MonoBehaviour
         {
             box5.SetActive(true);
         }
-        else if (type == items.Type.Key2)
+        else if (type == items.Type.Water)
         {
             box6.SetActive(true);
         }
@@ -80,6 +80,22 @@ public class Inventory : MonoBehaviour
         if (type == items.Type.Needle)
         {
             return box4.activeSelf;
+        }
+        if (type == items.Type.Wood)
+        {
+            return box2.activeSelf;
+        }
+        if (type == items.Type.Matchbox)
+        {
+            return box1.activeSelf;
+        }
+        if (type == items.Type.Water)
+        {
+            return box6.activeSelf;
+        }
+        if (type == items.Type.Key)
+        {
+            return box5.activeSelf;
         }
 
         return false;
@@ -110,6 +126,10 @@ public class Inventory : MonoBehaviour
         else if (type == items.Type.Key)
         {
             box5.SetActive(false);
+        }
+        else if (type == items.Type.Water)
+        {
+            box6.SetActive(false);
         }
     }
 

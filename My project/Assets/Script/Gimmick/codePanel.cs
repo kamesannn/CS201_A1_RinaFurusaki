@@ -27,11 +27,13 @@ public class codePanel : MonoBehaviour
 
 	public void AddDigit(string digit)
 	{
+		AudioManager.instance.Play("PressBotton");
 		codeTextValue += digit;
 	}
 
 	public void unlock()
     {
+		AudioManager.instance.Play("BoxUnlock");
 		BoxOpenImage.SetActive(true);
 	}
 }

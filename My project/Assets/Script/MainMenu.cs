@@ -19,5 +19,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("BeforeGame");
 
     }
-   
+    public void BackToMain()
+    {
+        SceneManager.LoadScene("MainMenu");
+
+    }
+
 }
