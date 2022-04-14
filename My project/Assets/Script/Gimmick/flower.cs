@@ -13,7 +13,7 @@ public class flower : MonoBehaviour
     {
         bool hasItem = Inventory.instance.CanUseItem(items.Type.Water);
 
-        if (hasItem == true)
+        if (hasItem == true)    // If player has water and click the small flower it will be change to bigFlower with the sound effect
         {
             smallFlower.sprite = bigFlower;
             AudioManager.instance.Play("Shine");

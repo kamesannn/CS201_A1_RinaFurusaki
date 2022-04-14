@@ -8,7 +8,7 @@ public class dirt : MonoBehaviour
     {
         bool hasItem = Inventory.instance.CanUseItem(items.Type.Cloth);
 
-        if (hasItem == true)
+        if (hasItem == true)    // If player has Cloth, player can clean Dirt, and the sound effect will be played
         {
             AudioManager.instance.Play("Wipe");
             gameObject.SetActive(false);

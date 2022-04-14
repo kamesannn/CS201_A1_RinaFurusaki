@@ -12,7 +12,7 @@ public class Door : MonoBehaviour
         
         bool hasItem = Inventory.instance.CanUseItem(items.Type.Key);
 
-        if (hasItem == true)
+        if (hasItem == true)    // If player has Key, player can open Door, and the sound effect will be played
         {
             AudioManager.instance.Play("DoorUnlock");
             DoorOpenImage.SetActive(true);
@@ -22,6 +22,6 @@ public class Door : MonoBehaviour
     }
     public void ExitFormRoom()
     {
-        SceneManager.LoadScene("ExitRoom");
+        SceneManager.LoadScene("ExitRoom"); // Navigate player to ExitRoom screen
     }
 }

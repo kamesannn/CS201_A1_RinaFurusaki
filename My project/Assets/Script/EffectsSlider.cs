@@ -17,8 +17,6 @@ public class EffectsSlider : MonoBehaviour
     }
     public void SetVolume()
     {
-
-
         mainMixer.SetFloat("EffectsValume", effectsSlider.value);
     }
 }

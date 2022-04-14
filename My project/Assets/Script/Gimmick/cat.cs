@@ -8,7 +8,7 @@ public class cat : MonoBehaviour
     {
         bool hasItem = Inventory.instance.CanUseItem(items.Type.Fish);
 
-        if (hasItem == true)
+        if (hasItem == true)    // If player has Fish, player can move the cat
         {
             gameObject.SetActive(false);
             Inventory.instance.UseItem(items.Type.Fish);

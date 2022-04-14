@@ -11,7 +11,7 @@ public class PanelChanger: MonoBehaviour
     string currentPanelStr = "MainRoom";
 
     
-    public void OnRightArrow()
+    public void OnRightArrow()  //This function is to move the screen to the right by moving the panel
     {
         
 
@@ -38,7 +38,7 @@ public class PanelChanger: MonoBehaviour
         }
     }
 
-    public void OnLeftArrow()
+    public void OnLeftArrow()   //This function is to move the screen to the left by moving the panel
     {
 
         
@@ -65,7 +65,7 @@ public class PanelChanger: MonoBehaviour
             
         }
     }
-    public void OnBackArrow()
+    public void OnBackArrow()   //This function is to go back by moving the panel
     {
         
 
@@ -91,7 +91,7 @@ public class PanelChanger: MonoBehaviour
            
         }
     }
-    public void OnPaint()
+    public void OnPaint()   // Move to PaintClose
     {
         
         this.transform.localPosition = new Vector2(-2123, 1525);
@@ -99,7 +99,7 @@ public class PanelChanger: MonoBehaviour
 
     }
 
-    public void OnToilet()
+    public void OnToilet()  // Move to toiletClose
     {
         
         this.transform.localPosition = new Vector2(2, 2924);
@@ -107,7 +107,7 @@ public class PanelChanger: MonoBehaviour
 
     }
 
-    public void OnSaftyBox()
+    public void OnSaftyBox()    // Move to boxClose
     {
         
         this.transform.localPosition = new Vector2(-2129, 2917);

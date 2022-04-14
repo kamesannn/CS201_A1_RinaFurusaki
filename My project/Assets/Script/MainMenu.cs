@@ -8,19 +8,19 @@ public class MainMenu : MonoBehaviour
     
     public void ExitButton()
     {
-        Application.Quit();
+        Application.Quit();     //QuitGame
         Debug.Log("Game Closed");
 
     }
 
     public void StartGame()
     {
-        SceneManager.LoadScene("BeforeGame");
+        SceneManager.LoadScene("BeforeGame");   //Move to BeforeGame Screen
 
     }
     public void BackToMain()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenu");     //Move to Main Menu Screen
 
     }
 

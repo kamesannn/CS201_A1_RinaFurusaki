@@ -8,7 +8,7 @@ public class baloon : MonoBehaviour
     {
         bool hasItem = Inventory.instance.CanUseItem(items.Type.Needle);
 
-        if (hasItem == true)
+        if (hasItem == true)    // If player has Needle, player can pop Ballon
         {
             AudioManager.instance.Play("Ballon");
             gameObject.SetActive(false);

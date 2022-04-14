@@ -5,7 +5,7 @@ using UnityEngine;
 public class wood : MonoBehaviour
 {
     
-    public void OnThisWood()
+    public void OnThisWood()    // Place wood into the fireplace
     {
         bool hasItem = Inventory.instance.CanUseItem(items.Type.Wood);
 
@@ -21,7 +21,7 @@ public class wood : MonoBehaviour
     {
         bool hasItem = Inventory.instance.CanUseItem(items.Type.Matchbox);
 
-        if (hasItem == true)
+        if (hasItem == true)    // If player has Matchbox, the fireplace will be completed, and play the sound effect
         {
             AudioManager.instance.Play("Match");
             gameObject.SetActive(false);

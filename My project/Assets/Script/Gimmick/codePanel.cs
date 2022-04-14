@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class codePanel : MonoBehaviour
+public class codePanel : MonoBehaviour	// codePanel for the Saftybox
 {
 	[SerializeField] GameObject BoxOpenImage;
 	[SerializeField]
@@ -16,24 +16,27 @@ public class codePanel : MonoBehaviour
 	{
 		codeText.text = codeTextValue;
 
-		if (codeTextValue == "4279")
+		if (codeTextValue == "4279")	// If player wnter 4279, the Saftybox will open
 		{
 			unlock();
 		}
 
 		if (codeTextValue.Length >= 4)
-			codeTextValue = "";
+        {
+			codeTextValue = "";		// codePanel will be restared when player put wrong 4 digits 
+		}
+			
 	}
 
 	public void AddDigit(string digit)
 	{
-		AudioManager.instance.Play("PressBotton");
+		AudioManager.instance.Play("PressBotton");	// Play the sound effect when player enter digits
 		codeTextValue += digit;
 	}
 
 	public void unlock()
     {
-		AudioManager.instance.Play("BoxUnlock");
+		AudioManager.instance.Play("BoxUnlock");    // Play the sound effect when player open the saftybox
 		BoxOpenImage.SetActive(true);
 	}
 }
